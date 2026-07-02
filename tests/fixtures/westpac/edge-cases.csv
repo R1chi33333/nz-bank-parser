@@ -1,0 +1,6 @@
+Date,Amount,Other Party,Description,Reference,Particulars,Analysis Code
+32/05/2026,-5.00,BAD DATE,EFTPOS,,,
+20/05/2026,5..00,BAD AMOUNT,EFTPOS,,,
+21/05/2026,-8.00,TRAILING ROW,EFTPOS
+,,,,,,
+22/05/2026,(15.75),PARENS DEBIT,CORRECTION,,,

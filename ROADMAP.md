@@ -9,7 +9,7 @@ Development follows small, releasable increments. Each item below is one loop.
 - [x] Loop 3: shared parsing primitives — date normalisation (DD/MM/YYYY and friends), amount parsing (negative sign and parentheses, cents output), row error model
 - [x] Loop 4: ANZ adapter with synthetic fixtures
 - [x] Loop 5: ASB adapter with synthetic fixtures
-- [ ] Loop 6: Westpac adapter with synthetic fixtures
+- [x] Loop 6: Westpac adapter with synthetic fixtures
 - [ ] Loop 7: Kiwibank adapter with synthetic fixtures
 - [ ] Loop 8: bank auto-detection from header fingerprints, public `parse()` API
 - [ ] Release v0.1.0 (semantic-release wiring, first GitHub release)
