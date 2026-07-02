@@ -12,7 +12,7 @@ Development follows small, releasable increments. Each item below is one loop.
 - [x] Loop 6: Westpac adapter with synthetic fixtures
 - [x] Loop 7: Kiwibank adapter with synthetic fixtures
 - [x] Loop 8: bank auto-detection from header fingerprints, public `parse()` API
-- [ ] Release v0.1.0 (semantic-release wiring, first GitHub release)
+- [x] Release v0.1.0 (semantic-release wiring, first GitHub release)
 
 ## Milestone: v0.2.0 — Playground
 
