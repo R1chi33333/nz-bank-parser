@@ -43,11 +43,7 @@ export interface RowError {
   rawLine: string;
 }
 
-export type RowErrorCode =
-  | 'invalid-date'
-  | 'invalid-amount'
-  | 'column-mismatch'
-  | 'empty-row';
+export type RowErrorCode = 'invalid-date' | 'invalid-amount' | 'column-mismatch' | 'empty-row';
 
 /**
  * Options accepted by `parse`.
