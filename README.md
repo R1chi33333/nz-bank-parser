@@ -6,7 +6,7 @@
 
 [Live Playground](https://nz-bank-parser.vercel.app) · [Documentation](#getting-started) · [Report Bug](https://github.com/R1chi33333/nz-bank-parser/issues/new?template=bug_report.md)
 
-> Status: under active development, pre-v0.1.0. The API below is the target surface.
+> Status: v0.x — core parsing and playground complete, npm publish lands with v1.0.0.
 
 ## Why this exists
 
@@ -20,6 +20,17 @@ Every New Zealand bank exports transaction CSVs in its own dialect: different da
 - Never throws away a whole file: bad rows are collected as structured errors, good rows still parse
 - Handles BOM, quoted commas, CRLF, empty lines, negative signs and parenthesised amounts
 - Zero runtime dependencies, dual ESM/CJS, full TypeScript types
+
+## Format support
+
+| Bank     | Export                                       | Header verified against                           | Dates      | Balance column |
+| -------- | -------------------------------------------- | ------------------------------------------------- | ---------- | -------------- |
+| ANZ      | Internet Banking transaction history CSV     | ANZ help pages and independent tooling docs       | DD/MM/YYYY | No             |
+| ASB      | FastNet Classic CSV (with metadata preamble) | Accounting software import guides                 | YYYY/MM/DD | No             |
+| Westpac  | Online banking CSV                           | Westpac published export documentation            | DD/MM/YYYY | No             |
+| Kiwibank | Full CSV                                     | Accounting import guides only (no published spec) | DD-MM-YYYY | Yes            |
+
+Detection is fingerprint-based on the header row. If your bank changes its export and detection fails, pass `{ bank: '...' }` explicitly and [open an issue](https://github.com/R1chi33333/nz-bank-parser/issues/new?template=bug_report.md) with the new header row.
 
 ## Architecture
 

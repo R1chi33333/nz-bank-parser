@@ -16,9 +16,9 @@ Development follows small, releasable increments. Each item below is one loop.
 
 ## Milestone: v0.2.0 — Playground
 
-- [ ] Loop 9: file drop zone and paste input, client-side parse
-- [ ] Loop 10: results table, error panel, detected-bank badge
-- [ ] Loop 11: polish pass — empty states, sample CSV buttons, responsive layout
+- [x] Loop 9: file drop zone and paste input, client-side parse
+- [x] Loop 10: results table, error panel, detected-bank badge
+- [x] Loop 11: polish pass — empty states, sample CSV buttons, responsive layout
 - [ ] Deploy to Vercel, release v0.2.0
 
 ## Milestone: v1.0.0 — Publish
