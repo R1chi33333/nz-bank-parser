@@ -1,0 +1,5 @@
+Account number,Date,Memo/Description,Source Code (payment type),TP ref,TP part,TP code,OP ref,OP part,OP code,OP name,OP Bank Account Number,Amount (credit),Amount (debit),Amount,Balance
+38-9000-0123456-00,not-a-date,BAD DATE,EFTPOS,,,,,,,,,,-5.00,-5.00,100.00
+38-9000-0123456-00,18-05-2026,BAD AMOUNT,EFTPOS,,,,,,,,,,-5.00,five,100.00
+38-9000-0123456-00,19-05-2026,NO BALANCE,EFTPOS,,,,,,,,,,-5.00,-5.00,
+38-9000-0123456-00,20-05-2026,OVERDRAWN,EFTPOS,,,,,,,,,,-50.00,-50.00,-25.40
