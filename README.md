@@ -6,6 +6,8 @@
 
 [Live Playground](https://nz-bank-parser.vercel.app) · [Documentation](#getting-started) · [Report Bug](https://github.com/R1chi33333/nz-bank-parser/issues/new?template=bug_report.md)
 
+![Playground demo: loading bank samples and seeing normalised transactions](./docs/demo.gif)
+
 > Status: v0.x — core parsing and playground complete, npm publish lands with v1.0.0.
 
 ## Why this exists
