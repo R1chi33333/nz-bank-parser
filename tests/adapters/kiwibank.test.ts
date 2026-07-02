@@ -51,6 +51,17 @@ describe('kiwibank adapter', () => {
     expect(transactions).toHaveLength(2);
   });
 
+  it('falls back to the amount sign when credit and debit columns are empty', () => {
+    const header =
+      'Account number,Date,Memo/Description,Source Code (payment type),TP ref,TP part,TP code,OP ref,OP part,OP code,OP name,OP Bank Account Number,Amount (credit),Amount (debit),Amount,Balance';
+    const csv = `${header}\n38-9000-0123456-00,21-05-2026,SIGN ONLY OUT,EFTPOS,,,,,,,,,,,-9.90,90.10\n38-9000-0123456-00,22-05-2026,SIGN ONLY IN,DC,,,,,,,,,,,9.90,100.00\n`;
+    const { transactions, errors } = parseWithAdapter(tokenize(csv), kiwibank);
+
+    expect(errors).toEqual([]);
+    expect(transactions[0]?.direction).toBe('debit');
+    expect(transactions[1]?.direction).toBe('credit');
+  });
+
   it('omits balance when the column is empty and keeps negative balances signed', () => {
     const { transactions } = parseWithAdapter(tokenize(loadFixture('edge-cases.csv')), kiwibank);
 

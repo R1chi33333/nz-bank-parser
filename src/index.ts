@@ -8,6 +8,8 @@ export type {
   Transaction,
 } from './types.js';
 
+export { parse, detectBank, UnrecognisedFormatError } from './parse.js';
+
 /**
  * Banks whose CSV exports this library can parse.
  */
