@@ -1,14 +1,13 @@
 [![CI](https://github.com/R1chi33333/nz-bank-parser/actions/workflows/ci.yml/badge.svg)](https://github.com/R1chi33333/nz-bank-parser/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/R1chi33333/nz-bank-parser/branch/main/graph/badge.svg)](https://codecov.io/gh/R1chi33333/nz-bank-parser)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![npm version](https://img.shields.io/npm/v/nz-bank-parser)](https://www.npmjs.com/package/nz-bank-parser)
 
 # nz-bank-parser — one clean transaction format for NZ bank CSV exports
 
 [Live Playground](https://nz-bank-parser.vercel.app) · [Documentation](#getting-started) · [Report Bug](https://github.com/R1chi33333/nz-bank-parser/issues/new?template=bug_report.md)
 
 ![Playground demo: loading bank samples and seeing normalised transactions](./docs/demo.gif)
-
-> Status: v0.x — core parsing and playground complete, npm publish lands with v1.0.0.
 
 ## Why this exists
 

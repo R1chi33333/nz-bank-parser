@@ -24,8 +24,8 @@ Development follows small, releasable increments. Each item below is one loop.
 ## Milestone: v1.0.0 — Publish
 
 - [x] Loop 12: Playwright e2e for sample load, unknown format and error panel flows
-- [ ] Loop 13: README format support matrix, demo GIF, npm publish via semantic-release
-- [ ] Release v1.0.0
+- [x] Loop 13: README format support matrix, demo GIF, npm publish via semantic-release
+- [x] Release v1.0.0
 
 ## Later
 
