@@ -1,0 +1,7 @@
+Type,Details,Particulars,Code,Reference,Amount,Date,ForeignCurrencyAmount,ConversionCharge
+Visa Purchase,"SAY ""KIA ORA"" CAFE",,,,-8.50,01/06/2026,,
+Payment,BROKEN ROW,,,,not-a-number,02/06/2026,,
+Payment,BAD DATE,,,,-5.00,31/02/2026,,
+Payment,SHORT ROW,-5.00,03/06/2026
+,,,,,,,,
+Payment,PARKING REFUND REVERSAL,,,,(23.45),04/06/2026,,
