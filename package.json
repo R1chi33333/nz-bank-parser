@@ -1,0 +1,64 @@
+{
+  "name": "nz-bank-parser",
+  "version": "0.0.0",
+  "description": "Zero-dependency TypeScript parser for CSV exports from New Zealand banks (ANZ, ASB, Westpac, Kiwibank), normalising them into a single transaction format.",
+  "keywords": [
+    "new-zealand",
+    "bank",
+    "csv",
+    "parser",
+    "anz",
+    "asb",
+    "westpac",
+    "kiwibank",
+    "transactions"
+  ],
+  "license": "MIT",
+  "author": "Yutong Jin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/R1chi33333/nz-bank-parser.git"
+  },
+  "homepage": "https://github.com/R1chi33333/nz-bank-parser#readme",
+  "bugs": {
+    "url": "https://github.com/R1chi33333/nz-bank-parser/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@vitest/coverage-v8": "^3.0.0",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^3.0.0"
+  }
+}
